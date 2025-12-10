@@ -55,11 +55,36 @@
             border-top: 1px solid #30363d;
             color: #8b949e;
         }
+        .nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+        }
+
+.nav a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 1rem;
+        }
+
+.nav a:hover {
+    text-decoration: underline;
+        }
+
     </style>
 </head>
 
 <body>
+
     <header>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
         <h1>Alexis Fernández</h1>
         <p class="subtitle">Cybersecurity Analyst | Blue Team | Cloud Security</p>
     </header>
@@ -73,7 +98,6 @@
 
         <section>
             <h2>Projects (coming soon)</h2>
-            <p>The first three projects will be:</p>
             <ul>
                 <li><strong>Splunk Threat Detection Lab</strong></li>
                 <li><strong>Windows Hardening + Sysmon + Sigma Rules</strong></li>
@@ -91,5 +115,7 @@
     <footer>
         © 2025 Alexis Fernández – Cybersecurity Portfolio
     </footer>
+
 </body>
+
 </html>
