@@ -109,7 +109,3 @@ footer {
     color: #bfdbfe;             /* tono más claro */
     text-decoration: underline;
 }
-
-.nav a:hover {
-    text-decoration: underline;        /* Subrayado al pasar el mouse */
-}
