@@ -1,0 +1,103 @@
+/*  
+======================================================
+ GLOBAL BASE STYLES
+ Estos estilos aplican a todo el sitio web.
+======================================================
+*/
+
+body {
+    margin: 0;                         /* Elimina márgenes por defecto del navegador */
+    padding: 0;                        /* Elimina padding por defecto */
+    font-family: Arial, Helvetica, sans-serif;  /* Fuente limpia y profesional */
+    background-color: #0d1117;         /* Fondo oscuro estilo GitHub Dark */
+    color: #c9d1d9;                    /* Color de texto principal */
+    line-height: 1.6;                  /* Espaciado entre líneas para mejor lectura */
+}
+
+/*  
+======================================================
+ HEADER
+ Zona superior de cada página.
+ Incluye el nombre, subtítulo y barra de navegación.
+======================================================
+*/
+
+header {
+    padding: 40px;                     /* Espaciado interno */
+    text-align: center;                /* Centra el contenido */
+    background: #161b22;               /* Fondo ligeramente más claro que body */
+    border-bottom: 1px solid #30363d;  /* Línea de separación */
+}
+
+h1 {
+    font-size: 2.4rem;                 /* Tamaño principal del título */
+    margin-bottom: 10px;               /* Separación del subtítulo */
+    color: #ffffff;                    /* Texto blanco para contraste */
+}
+
+/* Subtítulo profesional del header */
+p.subtitle {
+    font-size: 1.2rem;
+    color: #8b949e;                    /* Gris azulado suave */
+}
+
+/*  
+======================================================
+ LAYOUT DEL CONTENIDO
+======================================================
+*/
+
+main {
+    max-width: 900px;                  /* Ancho ideal para lectura */
+    margin: 40px auto;                 /* Centrar horizontalmente */
+    padding: 0 20px;                   /* Espacio lateral para móviles */
+}
+
+/* Cada sección (Welcome, Projects, About…) */
+section {
+    margin-bottom: 50px;               /* Espacio entre secciones */
+}
+
+/* Títulos secundarios */
+h2 {
+    margin-bottom: 10px;
+    color: #58a6ff;                    /* Azul brillante estilo GitHub */
+}
+
+/*  
+======================================================
+ FOOTER
+======================================================
+*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    border-top: 1px solid #30363d;
+    color: #8b949e;
+}
+
+/*  
+======================================================
+ NAVIGATION BAR
+ Barra de navegación con enlaces a las 4 páginas.
+======================================================
+*/
+
+.nav {
+    display: flex;                     /* Distribuye enlaces en una línea */
+    gap: 20px;                         /* Espacio entre enlaces */
+    justify-content: center;           /* Centrar enlaces */
+    margin-bottom: 20px;               /* Distancia del título */
+}
+
+.nav a {
+    color: #58a6ff;                    /* Color azul de los enlaces */
+    text-decoration: none;             /* Sin subrayado por defecto */
+    font-size: 1rem;                   /* Tamaño estándar */
+}
+
+.nav a:hover {
+    text-decoration: underline;        /* Subrayado al pasar el mouse */
+}
