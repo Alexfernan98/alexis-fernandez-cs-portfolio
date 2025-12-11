@@ -171,3 +171,14 @@ footer {
     border-top: 1px solid #30363d;
     color: #8b949e;
 }
+
+.project-link {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+    color: #bfdbfe;
+}
