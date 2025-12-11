@@ -30,25 +30,24 @@ header {
     border-bottom: 1px solid #30363d;
 }
 
-.nav {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.nav a {
-    color: #93c5fd;             
+/* Navigation links (header) */
+.nav-links a {
+    color: #93c5fd;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
     transition: 0.2s ease-in-out;
 }
 
-.nav a:hover {
+.nav-links a:hover {
     color: #bfdbfe;
     text-decoration: underline;
 }
+
+.nav-links a:visited {
+    color: #93c5fd; /* evita que se pongan morados */
+}
+
 
 /* Refined header layout */
 .site-header {
