@@ -1,72 +1,142 @@
 /*  
 ======================================================
  GLOBAL BASE STYLES
- Estos estilos aplican a todo el sitio web.
 ======================================================
 */
 
+html {
+    scroll-behavior: smooth; /* desplazamiento suave */
+}
+
 body {
-    margin: 0;                         /* Elimina márgenes por defecto del navegador */
-    padding: 0;                        /* Elimina padding por defecto */
-    font-family: 'Inter', Arial, Helvetica, sans-serif;  /* Fuente limpia y profesional */
-    background-color: #0e1117;   /* Fondo primario */
-    color: #e5e7eb;              /* Texto ligeramente más claro */
-    line-height: 1.6;                  /* Espaciado entre líneas para mejor lectura */
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    background-color: #0e1117;   /* fondo principal oscuro */
+    color: #e5e7eb;              /* texto principal claro */
+    line-height: 1.6;
 }
 
 /*  
 ======================================================
- HEADER
- Zona superior de cada página.
- Incluye el nombre, subtítulo y barra de navegación.
+ HEADER + NAVIGATION
 ======================================================
 */
 
 header {
-    padding: 40px;                     /* Espaciado interno */
-    text-align: center;                /* Centra el contenido */
-    background: #11151f;               /* Fondo ligeramente más claro que body */
-    border-bottom: 1px solid #30363d;  /* Línea de separación */
+    padding: 40px;
+    text-align: center;
+    background: #11151f;               
+    border-bottom: 1px solid #30363d;
 }
 
-h1 {
-    font-size: 2.8rem;                 /* Tamaño principal del título */
-    font-weight: 700;
-    margin-bottom: 10px;               /* Separación del subtítulo */
-    color: #ffffff;                    /* Texto blanco para contraste */
+.nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-/* Subtítulo profesional del header */
-p.subtitle {
-    font-size: 1.2rem;
-    color: #8b949e;                    /* Gris azulado suave */
+.nav a {
+    color: #93c5fd;             
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.nav a:hover {
+    color: #bfdbfe;
+    text-decoration: underline;
 }
 
 /*  
 ======================================================
- LAYOUT DEL CONTENIDO
+ TYPOGRAPHY
+======================================================
+*/
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;  /* tracking profesional */
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+p.subtitle {
+    font-size: 1.2rem;
+    color: #8b949e;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    margin-bottom: 10px;
+    color: #58a6ff;
+}
+
+/*  
+======================================================
+ LAYOUT & CONTENT
 ======================================================
 */
 
 main {
-    max-width: 900px;                  /* Ancho ideal para lectura */
-    margin: 40px auto;                 /* Centrar horizontalmente */
-    padding: 0 20px;                   /* Espacio lateral para móviles */
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-/* Cada sección (Welcome, Projects, About…) */
+/* sección general */
 section {
     margin-bottom: 60px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #1f2937; /* línea sutil para separar */
+    border-bottom: 1px solid #1f2937;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* Títulos secundarios */
-h2 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #58a6ff;                    /* Azul brillante estilo GitHub */
+/* hover sutil profesional */
+section:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+/*  
+======================================================
+ PROJECT CARDS (para projects.html)
+======================================================
+*/
+
+.project-card {
+    background-color: #11151f;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #1f2937;
+    margin-bottom: 20px;
+    transition: 0.25s ease;
+}
+
+.project-card:hover {
+    border-color: #3b82f6;
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.25);
+}
+
+/*  
+======================================================
+ FADE-IN ANIMATION
+======================================================
+*/
+
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /*  
@@ -81,31 +151,4 @@ footer {
     margin-top: 60px;
     border-top: 1px solid #30363d;
     color: #8b949e;
-}
-
-/*  
-======================================================
- NAVIGATION BAR
- Barra de navegación con enlaces a las 4 páginas.
-======================================================
-*/
-
-.nav {
-    display: flex;                     /* Distribuye enlaces en una línea */
-    gap: 20px;                         /* Espacio entre enlaces */
-    justify-content: center;           /* Centrar enlaces */
-    margin-bottom: 20px;               /* Distancia del título */
-}
-
-.nav a {
-    color: #93c5fd;             /* azul suave y profesional */
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: 0.2s ease-in-out; /* suaviza hover */
-}
-
-.nav a:hover {
-    color: #bfdbfe;             /* tono más claro */
-    text-decoration: underline;
 }
