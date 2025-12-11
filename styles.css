@@ -50,6 +50,25 @@ header {
     text-decoration: underline;
 }
 
+/* Refined header layout */
+.site-header {
+    padding-bottom: 20px;
+}
+
+/* Container that holds the navbar */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Nav links grouped */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+
 /*  
 ======================================================
  TYPOGRAPHY
