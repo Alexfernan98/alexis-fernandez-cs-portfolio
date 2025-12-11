@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Alexis Fernández</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybersecurity Projects | Alexis Fernández</title>
+
     <!-- Professional modern font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Linking the global CSS stylesheet -->
-    <link rel="stylesheet" href="styles.css">
 
+    <!-- Global stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <!-- Navigation Header -->
-    <header>
-        <div class="nav">
+<header class="site-header">
+    <nav class="nav-container">
+        <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="projects.html">Projects</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
         </div>
-    </header>
+    </nav>
 
-    <!-- Main content area centered via CSS -->
-    <main>
-        <section>
-            <h1>Cybersecurity Projects</h1>
-            <p>This page will showcase detailed documentation of cybersecurity projects, detections, and hands-on labs.</p>
-        </section>
+    <h1>Cybersecurity Projects</h1>
+    <p class="subtitle">Detection engineering, hardening, SIEM operations, cloud security</p>
+</header>
 
-    </main>
-    
+<main class="fade-in">
+
+    <section>
+        <h2>Project Portfolio</h2>
+        <p>
+            Below is a curated selection of hands-on cybersecurity projects demonstrating SOC analysis,
+            detection engineering, incident response, and cloud security techniques.
+        </p>
+    </section>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+        <h2>Splunk Threat Detection Lab</h2>
+        <p>Building detections, dashboards, and incident analysis using Splunk. Includes Windows event logs, Sysmon, and correlation rules.</p>
+        <a class="project-link" href="#">View Project →</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+        <h2>Windows Hardening + Sysmon + Sigma Rules</h2>
+        <p>Hardening baseline creation, Sysmon operational configuration, and custom Sigma detection rules.</p>
+        <a class="project-link" href="#">View Project →</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+        <h2>AWS IAM Misconfiguration Detection</h2>
+        <p>Detecting privilege escalation paths and insecure IAM policies using CloudTrail logs.</p>
+        <a class="project-link" href="#">View Project →</a>
+    </div>
+
+</main>
+
+<footer>
+    © 2025 Alexis Fernández – Cybersecurity Portfolio
+</footer>
+
 </body>
-
 </html>
